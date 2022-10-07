@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".LinearLayoutForm"
+    android:gravity="center"
+    >
+
+  <TextView
+      android:id="@+id/textViewRegistrationLinear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="65dp"
+      android:text="@string/registration"
+      android:textSize="30sp"/>
+  
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextFirstNameRelative"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints=""
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575" />
+    <EditText
+        android:id="@+id/editLastNameRelative"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:autofillHints=""
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575" />
+
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/editTextPhoneRelative"
+      android:layout_width="365dp"
+      android:layout_height="60dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/phone_number"
+      android:inputType="phone"
+      android:textColorHint="#757575"
+      android:layout_marginStart="7dp"/>
+
+  <EditText
+      android:id="@+id/editTextEmailRelative"
+      android:layout_width="365dp"
+      android:layout_height="60dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/email_address"
+      android:inputType="textEmailAddress"
+      android:textColorHint="#757575"
+      android:layout_marginStart="7dp"/>
+
+  <EditText
+      android:id="@+id/editTextPasswordRelative"
+      android:layout_width="365dp"
+      android:layout_height="60dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:textColorHint="#757575"
+      android:layout_marginStart="7dp"/>
+
+  <EditText
+      android:id="@+id/editTextRePasswordRelative"
+      android:layout_width="365dp"
+      android:layout_height="60dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/confirm_password"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:textColorHint="#757575"
+      android:layout_marginStart="7dp"/>
+
+  <TextView
+      android:id="@+id/textViewPasswordInstructionRelative"
+      android:layout_width="365dp"
+      android:layout_height="102dp"
+      android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character"
+      android:textSize="15sp"
+      android:layout_marginStart="7dp"/>
+
+  <Button
+      android:id="@+id/btnCreateAccountRelative"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:text="@string/create_account"
+      android:textSize="25sp"
+/>
+</LinearLayout>

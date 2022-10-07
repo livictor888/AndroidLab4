@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutForm">
+
+    <TextView
+        android:id="@+id/textViewRegistrationRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/registration"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextFirstNameRelative"
+        android:layout_alignTop="@+id/textViewRegistrationRelative"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="30dp"
+        android:autofillHints=""
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575" />
+    <EditText
+        android:id="@+id/editLastNameRelative"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/textViewRegistrationRelative"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/editTextFirstNameRelative"
+        android:autofillHints=""
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575" />
+    <EditText
+        android:id="@+id/editTextPhoneRelative"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColorHint="#757575"
+        android:layout_alignTop="@id/editLastNameRelative"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmailRelative"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        android:layout_alignTop="@id/editTextPhoneRelative"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextPasswordRelative"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_alignTop="@id/editTextEmailRelative"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextRePasswordRelative"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_alignTop="@id/editTextPasswordRelative"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewPasswordInstructionRelative"
+        android:layout_width="365dp"
+        android:layout_height="102dp"
+        android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character"
+        android:textSize="15sp"
+        android:layout_alignTop="@id/editTextRePasswordRelative"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="30dp"/>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textSize="25sp"
+        android:layout_alignTop="@id/textViewPasswordInstructionRelative"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

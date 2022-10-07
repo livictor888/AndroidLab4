@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/grid_layout"
+    tools:context=".GridLayoutForm"
+    android:rowCount="8"
+    android:columnCount="2">
+
+    <TextView
+        android:id="@+id/textViewRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_columnSpan="2"
+        android:gravity="center"
+        android:text="@string/registration"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="7dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:layout_columnSpan="1"/>
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:layout_columnSpan="1" />
+    <EditText
+        android:id="@+id/editTextPhoneRelative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColorHint="#757575"
+        android:layout_marginStart="7dp"
+        android:layout_columnSpan="2"/>
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        android:layout_marginStart="7dp"
+        android:layout_columnSpan="2" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRelative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_marginStart="7dp"
+        android:layout_columnSpan="2"/>
+
+    <EditText
+        android:id="@+id/editTextRePasswordRelative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_marginStart="7dp"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:id="@+id/textViewPasswordInstructionRelative"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character"
+        android:textSize="15sp"
+        android:layout_marginStart="7dp"
+        android:layout_columnSpan="2"/>
+
+    <Button
+        android:id="@+id/btnCreateAccountRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textSize="20sp"
+        android:layout_columnSpan="2"
+        android:gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+</GridLayout>

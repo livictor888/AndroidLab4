@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TableLayoutForm">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewRegistrationLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="@string/registration"
+            android:textSize="30sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextFirstNameRelative"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#757575" />
+        <EditText
+            android:id="@+id/editLastNameRelative"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#757575" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextPhoneRelative"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:layout_span="2"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColorHint="#757575"
+            android:layout_marginStart="7dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextEmailRelative"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:layout_span="2"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#757575"
+            android:layout_marginStart="7dp"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextPasswordRelative"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:layout_span="@integer/material_motion_duration_long_2"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            android:layout_marginStart="7dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextRePasswordRelative"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:layout_span="2"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            android:layout_marginStart="7dp"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewPasswordInstructionRelative"
+            android:layout_width="365dp"
+            android:layout_span="2"
+            android:layout_height="102dp"
+            android:text="@string/a_valid_password_has_at_least_8_characters_and_includes_at_lease_one_uppercase_letter_one_lowercase_letter_one_number_and_one_special_character"
+            android:textSize="15sp"
+            android:layout_marginStart="7dp"/>
+
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="40"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" >
+        <Button
+            android:id="@+id/btnCreateAccountRelative"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+<!--    <TableRow-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnCreateAccountRelative"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_span="2"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/create_account"-->
+<!--            android:textSize="25sp" />-->
+
+<!--    </TableRow>-->
+</TableLayout>
